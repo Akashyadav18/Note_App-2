@@ -1,0 +1,140 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+}
+header{
+  width: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+h2{
+  text-align: center;
+  margin: 10px;
+  gap: 6px;
+}
+
+input{
+  font-size: 20px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+button {
+  padding: 0.8em 1em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+ }
+ 
+ button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ button:hover::before {
+  width: 105%;
+ }
+ 
+ button:hover {
+  color: #111;
+ }
+
+ textarea{
+  margin-left: 1rem;
+  border: 2px solid;
+  padding: 10px; 
+  font-size: 20px;
+  width: 70%;
+  height: 100px;
+  overflow: auto;
+ }
+
+ @media (max-width: 600px){
+  .form{
+    flex-direction: column;
+    display: grid;
+    place-items: center;
+  }
+}
+@media (max-width: 600px){
+  .name{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 600px){
+  .email{
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+  }
+}
+
+.updateData{
+  width: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0 4%;
+  }
+  .item {
+    flex: 0 2 24%;
+    height: 250px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: auto;
+  }
+ 
+  @media (max-width: 600px){
+      .container{
+        flex-direction: column;
+      }
+  }
+
+ .title{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  padding: 0.6rem;
+  margin: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+ }
+ .desc{
+  font-size: 120%;
+ }
+ .icon{
+  margin-right: 20px;
+ }
